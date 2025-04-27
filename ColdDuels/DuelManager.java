@@ -34,7 +34,7 @@ public class DuelManager {
                 target.sendMessage(ChatColor.RED + "Duel request from " + sender.getName() + " has expired.");
                 duelRequests.remove(sender);
             }
-        }, 20 * 30); // 30 seconds to accept the duel
+        }, 20 * 30);
     }
 
     public void acceptDuel(Player player) {
@@ -58,10 +58,8 @@ public class DuelManager {
         player1.sendMessage(ChatColor.GREEN + "Duel started with " + player2.getName() + "!");
         player2.sendMessage(ChatColor.GREEN + "Duel started with " + player1.getName() + "!");
 
-        // Code for ending the duel and determining the winner (you can customize this)
     }
 
     public void savePlayerStats() {
-        // Implement saving of player stats (e.g., wins, losses, etc.)
     }
 }
